@@ -8,6 +8,13 @@ export default {
     fontFamily: {
       sans: ['Inter', 'sans-serif']
     },
+    extend: {
+      colors: {
+        'nba-red': '#C9082A',
+        'nba-blue': '#17408B',
+        'nba-white': '#FFFFFF',
+      }
+    }
   },
   plugins: [],
 };
