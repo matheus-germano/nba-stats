@@ -1,8 +1,8 @@
-import { Scorer } from '../../types/scorer';
+import { Player } from '../../types/player';
 import { httpClient } from '../httpClient';
 
 interface ScorersResponse {
-  results: Scorer[]
+  results: Player[]
 }
 
 export async function scorers() {

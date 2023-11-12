@@ -1,8 +1,8 @@
-import { Assist } from '../../types/assist';
+import { Player } from '../../types/player';
 import { httpClient } from '../httpClient';
 
 interface AssistsResponse {
-  results: Assist[]
+  results: Player[]
 }
 
 export async function assists() {

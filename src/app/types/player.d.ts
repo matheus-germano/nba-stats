@@ -1,4 +1,4 @@
-export interface Assist {
+export interface Player {
   id: number
   player_name: string
   age: number
