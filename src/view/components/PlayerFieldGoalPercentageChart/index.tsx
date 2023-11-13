@@ -31,11 +31,11 @@ export function PlayerFieldGoalPercentageChart({ player }: PlayerFieldGoalPercen
 
   useEffect(() => {
     setData({
-      labels: ['Field Goals', 'Field Attempts'],
+      labels: ['Goals', 'Missed'],
       datasets: [
         {
           label: 'Attempts',
-          data: [player.field_goals, player.field_attempts],
+          data: [player.field_goals, (player.field_attempts - player.field_goals)],
           backgroundColor: [
             'rgba(201, 8, 42, 0.2)',
             'rgba(23, 64, 139, 0.2)',

@@ -1,9 +1,9 @@
-import { FieldGoalPercentage } from '../components/FieldGoalPercentage';
-import { FieldGoalTypes } from '../components/FieldGoalTypes';
-import { SeasonScores } from '../components/SeasonScores';
-import { TopFiveSeasonAssists } from '../components/TopFiveSeasonAssists';
-import { TopFiveSeasonRebounders } from '../components/TopFiveSeasonRebounders';
-import { TopFiveSeasonScorers } from '../components/TopFiveSeasonScorers';
+import { FieldGoalPercentage } from '../../components/FieldGoalPercentage';
+import { FieldGoalTypes } from '../../components/FieldGoalTypes';
+import { SeasonScores } from '../../components/SeasonScores';
+import { TopFiveSeasonAssists } from '../../components/TopFiveSeasonAssists';
+import { TopFiveSeasonRebounders } from '../../components/TopFiveSeasonRebounders';
+import { TopFiveSeasonScorers } from '../../components/TopFiveSeasonScorers';
 
 export function Dashboard() {
   return (

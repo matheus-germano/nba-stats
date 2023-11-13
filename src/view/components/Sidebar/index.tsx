@@ -20,6 +20,15 @@ export function Sidebar() {
         <li className='w-full p-2 rounded-lg hover:bg-white hover:text-nba-red transition-all'>
           <Link to='/all-players'>All Players</Link>
         </li>
+        <li className='w-full p-2 rounded-lg hover:bg-white hover:text-nba-red transition-all'>
+          <Link to='/scorers'>Scorers</Link>
+        </li>
+        <li className='w-full p-2 rounded-lg hover:bg-white hover:text-nba-red transition-all'>
+          <Link to='/assists'>Assists</Link>
+        </li>
+        <li className='w-full p-2 rounded-lg hover:bg-white hover:text-nba-red transition-all'>
+          <Link to='/rebounders'>Rebounders</Link>
+        </li>
       </ul>
     </nav>
   );
