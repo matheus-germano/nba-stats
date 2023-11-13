@@ -1,27 +1,23 @@
-# React + TypeScript + Vite
+# NBA Stats
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A basic application to show NBA players statistics, using charts to build a dashboard.
 
-Currently, two official plugins are available:
+### Technologies
+The application uses:
+- ReactJS
+- Typescript
+- Tailwindcss
+- react-router-dom
+- react-query
+- axios
+- phosphor-icons
+- clsx + tailwind-merge
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Provided data
+The application data is provided by [NBA Stats API](https://documenter.getpostman.com/view/24232555/2s93shzpR3#941df14e-8d1c-4a02-8c2d-a003dbe2a03b)
 
-## Expanding the ESLint configuration
+To make requests to the API, you should create a .env file in the product root folder with the name `VITE_NBA_API_URL` with the API path.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<hr>
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+© 2023 Matheus Germano da Costa.
