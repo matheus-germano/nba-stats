@@ -24,7 +24,7 @@ export function SeasonScores() {
       <main className='w-full flex justify-between'>
         <div className='flex-[7]'>
           {
-            activePlayerIndex > -1 ? <SeasonScoresChart seasons={seasons} /> : <p>Selecione um jogador...</p>
+            (activePlayerIndex !== undefined && activePlayerIndex > -1) ? <SeasonScoresChart seasons={seasons} /> : <p>Selecione um jogador...</p>
           }
         </div>
         <aside className='flex flex-col'>

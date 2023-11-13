@@ -29,7 +29,7 @@ export function FieldGoalPercentage() {
       <main className='w-full flex justify-between'>
         <div className='flex-[7] max-h-[240px]'>
           {
-            activePlayerIndex > -1 ? <PlayerFieldGoalPercentageChart player={activePlayer} /> : <p>Selecione um jogador...</p>
+            (activePlayerIndex !== undefined && activePlayerIndex > -1) ? <PlayerFieldGoalPercentageChart player={activePlayer} /> : <p>Selecione um jogador...</p>
           }
         </div>
         <aside className='flex flex-col'>
