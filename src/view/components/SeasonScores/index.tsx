@@ -22,7 +22,7 @@ export function SeasonScores() {
     <article className='w-full bg-white rounded-lg flex flex-col p-4'>
       <h3 className='font-bold text-xl mb-2'>Season Top Scorers Scores</h3>
       <main className='w-full flex justify-between'>
-        <div className='flex-[7]'>
+        <div className='flex-[7] max-h-[350px]'>
           {
             (activePlayerIndex !== undefined && activePlayerIndex > -1) ? <SeasonScoresChart seasons={seasons} /> : <p>Selecione um jogador...</p>
           }

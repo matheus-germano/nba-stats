@@ -37,12 +37,12 @@ export function PlayerFieldGoalTypesChart({ player }: PlayerFieldGoalTypesChartP
           label: 'Shoots',
           data: [player.two_fg, player.three_fg],
           backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
+            'rgba(201, 8, 42, 0.2)',
+            'rgba(23, 64, 139, 0.2)',
           ],
           borderColor: [
-            'rgba(255, 99, 132, 1)',
-            'rgba(54, 162, 235, 1)',
+            'rgba(201, 8, 42, 1)',
+            'rgba(23, 64, 139, 1)',
           ],
           borderWidth: 1,
         },
@@ -55,12 +55,19 @@ export function PlayerFieldGoalTypesChart({ player }: PlayerFieldGoalTypesChartP
       data={data}
       options={{
         maintainAspectRatio: false,
-        responsive: true,
         plugins: {
           legend: {
             position: 'right',
             align: 'center',
-          }
+            labels: {
+              usePointStyle: true,
+              pointStyle: 'circle',
+              boxWidth: 5,
+              font: {
+                family: "'Inter', sans-serif"
+              }
+            }
+          },
         }
       }}
     />

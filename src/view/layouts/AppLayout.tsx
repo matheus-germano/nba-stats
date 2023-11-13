@@ -6,7 +6,7 @@ export function AppLayout() {
   return (
     <div className='h-full flex'>
       <Sidebar />
-      <main className='w-full flex flex-col'>
+      <main className='w-full h-[100vh] flex flex-col'>
         <Outlet />
         <Footer />
       </main>
