@@ -5,7 +5,7 @@ export function TopFiveSeasonAssists() {
   const { topFiveAssists } = useTopFiveSeasonAssistsController();
 
   return (
-    <article className='w-full bg-white rounded-lg flex flex-col gap-2 p-4'>
+    <article className='w-[calc(100vw-2.25rem)] lg:w-full min-w-[350px] bg-white rounded-lg flex flex-col gap-2 p-4'>
       <header className='w-full flex items-center justify-between'>
         <h3 className='font-bold text-xl'>Top Assists</h3>
         <Strategy size={24} />

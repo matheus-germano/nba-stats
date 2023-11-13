@@ -28,7 +28,7 @@ export function FieldGoalTypes() {
   return (
     <article className='w-full bg-white rounded-lg flex flex-col p-4'>
       <h3 className='font-bold text-xl mb-2'>Top 5 Scorers Field Goal Types</h3>
-      <main className='w-full flex justify-between'>
+      <main className='w-full flex flex-col lg:flex-row justify-between gap-10'>
         <div className='flex-[7] max-h-[240px] flex flex-col gap-2'>
           {
             (activePlayerIndex !== undefined && activePlayerIndex > -1) ? (
@@ -39,7 +39,7 @@ export function FieldGoalTypes() {
             ) : <p>Selecione um jogador...</p>
           }
         </div>
-        <aside className='flex flex-col'>
+        <aside className='w-full lg:w-max justify-center flex lg:flex-col'>
           {topFiveScorers?.map((scorer, index) => (
             <img
               key={scorer.id}

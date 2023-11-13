@@ -12,12 +12,12 @@ export function Dashboard() {
         <h1 className='font-black text-4xl'>Dashboard</h1>
       </header>
       <main className='flex flex-col gap-4'>
-        <div className='flex gap-4'>
+        <div className='flex gap-4 overflow-x-auto shrink-0 snap-center lg:overflow-hidden'>
           <TopFiveSeasonScorers />
           <TopFiveSeasonAssists />
           <TopFiveSeasonRebounders />
         </div>
-        <div className='flex gap-4'>
+        <div className='flex flex-col lg:flex-row gap-4'>
           <FieldGoalPercentage />
           <FieldGoalTypes />
         </div>

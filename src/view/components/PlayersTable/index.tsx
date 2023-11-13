@@ -35,7 +35,18 @@ export function PlayersTable({ players = [] }: PlayersTableProps) {
                   <td className='px-6 py-4'>{player.AST}</td>
                   <td className='px-6 py-4'>{player.DRB + player.ORB}</td>
                 </tr>
-              )) : <p className='px-6 py-3'>No players found</p>
+              )) : (
+                <tr className='bg-white border-b'>
+                  <td className='px-6 py-4'>No players found</td>
+                  <td className='px-6 py-4'></td>
+                  <td className='px-6 py-4'></td>
+                  <td className='px-6 py-4'></td>
+                  <td className='px-6 py-4'></td>
+                  <td className='px-6 py-4'></td>
+                  <td className='px-6 py-4'></td>
+                  <td className='px-6 py-4'></td>
+                </tr>
+              )
             }
           </tbody>
         </table>
