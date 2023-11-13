@@ -29,9 +29,14 @@ export function FieldGoalTypes() {
     <article className='w-full bg-white rounded-lg flex flex-col p-4'>
       <h3 className='font-bold text-xl mb-2'>Top 5 Scorers Field Goal Types</h3>
       <main className='w-full flex justify-between'>
-        <div className='flex-[7] max-h-[240px]'>
+        <div className='flex-[7] max-h-[240px] flex flex-col gap-2'>
           {
-            (activePlayerIndex !== undefined && activePlayerIndex > -1) ? <PlayerFieldGoalTypesChart player={activePlayer} /> : <p>Selecione um jogador...</p>
+            (activePlayerIndex !== undefined && activePlayerIndex > -1) ? (
+              <>
+                <p>{activePlayer.player_name}</p>
+                <PlayerFieldGoalTypesChart player={activePlayer} />
+              </>
+            ) : <p>Selecione um jogador...</p>
           }
         </div>
         <aside className='flex flex-col'>
