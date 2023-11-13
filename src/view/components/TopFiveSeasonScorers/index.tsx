@@ -14,7 +14,7 @@ export function TopFiveSeasonScorers() {
         {topFiveScorers?.map(scorer => (
           <div key={scorer.id} className='w-full flex items-center justify-between'>
             <p>{scorer.player_name}</p>
-            <p>{scorer.PTS} points</p>
+            <p><span className='font-bold'>{scorer.PTS}</span> points</p>
           </div>
         ))}
       </main>

@@ -14,7 +14,7 @@ export function TopFiveSeasonAssists() {
         {topFiveAssists?.map(assist => (
           <div key={assist.id} className='w-full flex items-center justify-between'>
             <p>{assist.player_name}</p>
-            <p>{assist.AST} assists</p>
+            <p><span className='font-bold'>{assist.AST}</span> assists</p>
           </div>
         ))}
       </main>

@@ -14,7 +14,7 @@ export function TopFiveSeasonRebounders() {
         {topFiveRebounders?.map(rebounder => (
           <div key={rebounder.id} className='w-full flex items-center justify-between'>
             <p>{rebounder.player_name}</p>
-            <p>{rebounder.DRB} rebounds</p>
+            <p><span className='font-bold'>{rebounder.DRB}</span> rebounds</p>
           </div>
         ))}
       </main>
