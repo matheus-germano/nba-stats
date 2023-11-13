@@ -18,6 +18,9 @@ The application data is provided by [NBA Stats API](https://documenter.getpostma
 
 To make requests to the API, you should create a .env file in the project root folder with the name `VITE_NBA_API_URL` with the API path.
 
+### Deploy
+The application is deployed in Vercel, you can access it's production version [here](https://nba-stats-iota.vercel.app/)
+
 <hr>
 
 © 2023 Matheus Germano da Costa.
